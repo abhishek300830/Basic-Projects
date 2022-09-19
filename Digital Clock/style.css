@@ -1,0 +1,77 @@
+body{
+    background-image: url("./Clock-background.jpg");
+    background-repeat: no-repeat;
+    background-repeat: space;
+}
+.div-main{
+    
+    color: black;
+    text-align: center;
+}
+.div-heading{
+    margin: 100px;
+    border-radius: 10px;
+    background: linear-gradient(to right,#D16BA5,#86A8E7,#5FFBF1);
+}
+.main-heading{
+    font-size: 4rem;
+    font-family: monospace;
+}
+.div-clock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.card{
+    font-size: 3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 30px;
+    background: linear-gradient(#D16BA5,#86A8E7,#5FFBF1);
+    height: 300px;
+    width: 200px;
+    
+    
+}
+.time-card{
+    margin-top: 100px;
+
+    
+}
+.time-labels{
+    color:white;
+    background-color: red;
+    margin-top: 60px;
+}
+.square{
+    height: 60px;
+    width: 60px;
+    margin: 70px;
+    background-color: red;
+    animation: rotate infinite  1s ;
+}
+@keyframes rotate {
+    0%{
+        scale: 1;
+        background-color: #5FFBF1;
+    }
+    50%{
+        scale: 1.5;
+        background-color: #86A8E7;
+    }
+    100%{
+        scale: 1;
+        background-color: #D16BA5;
+    }
+}
+.ampm{
+    position: absolute;
+    background-color: red;
+    color:white;
+    font-size: 40px;
+    height: 50px;
+    width: 60px;
+    margin-top: 215px;
+    margin-left: 800px;
+}
