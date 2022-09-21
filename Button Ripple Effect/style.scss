@@ -1,0 +1,42 @@
+body{
+    background-color: antiquewhite;
+    .div-main{
+        display: flex;
+        // background-color: red;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        .btn{
+            box-sizing: border-box;
+            text-align: center;
+            padding: 30px;
+            height: 100px;
+            width: 300px;
+            font-size: x-large;
+            font-family: sans-serif;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 5px 10px rgba(0,0,0,0.3);
+        }
+        .btn:hover{
+            cursor: pointer;
+            animation: spiral .5s normal ease-in-out ;
+        }
+        .btn:active{
+            scale: .9;
+        }
+        @keyframes spiral {
+            0%{
+
+                background: linear-gradient(to right,white,rgb(119, 119, 255),white);
+            }
+            50%{
+                background:linear-gradient(to right,rgb(164, 164, 255),white,rgb(165, 165, 255));
+            }
+            100%{
+                background:linear-gradient(to right,rgb(119, 119, 255),white,rgb(119, 119, 255));
+            }
+        }
+    }
+}
